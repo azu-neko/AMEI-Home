@@ -1,0 +1,28 @@
+{
+  "name": "vue3-home",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src public/simulator.js --ext .js,.vue --max-warnings=0",
+    "lint:fix": "eslint src public/simulator.js --ext .js,.vue --fix",
+    "format": "prettier --write \"src/**/*.{js,vue,css}\" \"public/*.js\" \"*.{js,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,vue,css}\" \"public/*.js\" \"*.{js,json,md}\"",
+    "test:smoke": "npm run build"
+  },
+  "dependencies": {
+    "ant-design-vue": "^4.2.1",
+    "vue": "^3.5.35"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.7",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.8.3",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^7.3.3"
+  }
+}
